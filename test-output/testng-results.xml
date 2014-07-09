@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="17" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LRS1.1" duration-ms="253508" started-at="2014-07-09T09:18:38Z" finished-at="2014-07-09T09:22:52Z">
+    <groups>
+    </groups>
+    <test name="LRSFunctions" duration-ms="35106" started-at="2014-07-09T09:18:38Z" finished-at="2014-07-09T09:19:13Z">
+      <class name="ForgotPassword.Functions">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="OpenBrowser" is-config="true" duration-ms="10128" started-at="2014-07-09T14:48:38Z" finished-at="2014-07-09T14:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="ForgotPasswordTestCases()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="ForgotPasswordTestCases" duration-ms="8421" started-at="2014-07-09T14:48:48Z" finished-at="2014-07-09T14:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPasswordTestCases -->
+        <test-method status="PASS" signature="GoBack()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="GoBack" duration-ms="62" started-at="2014-07-09T14:48:57Z" depends-on-methods="ForgotPassword.Functions.ForgotPasswordTestCases" finished-at="2014-07-09T14:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoBack -->
+        <test-method status="PASS" signature="resetButton()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="resetButton" duration-ms="5148" started-at="2014-07-09T14:48:57Z" depends-on-methods="ForgotPassword.Functions.GoBack, ForgotPassword.Functions.ForgotPasswordTestCases" finished-at="2014-07-09T14:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetButton -->
+        <test-method status="PASS" signature="EmailField()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="EmailField" duration-ms="5224" started-at="2014-07-09T14:49:02Z" depends-on-methods="ForgotPassword.Functions.resetButton" finished-at="2014-07-09T14:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailField -->
+        <test-method status="PASS" signature="EmailConfirmation()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="EmailConfirmation" duration-ms="6072" started-at="2014-07-09T14:49:07Z" depends-on-methods="ForgotPassword.Functions.EmailField, ForgotPassword.Functions.resetButton" finished-at="2014-07-09T14:49:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailConfirmation -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ForgotPassword.Functions@1888ff2c]" name="close" is-config="true" duration-ms="16" started-at="2014-07-09T14:49:13Z" finished-at="2014-07-09T14:49:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ForgotPassword.Functions -->
+    </test> <!-- LRSFunctions -->
+    <test name="LRSLocation" duration-ms="31556" started-at="2014-07-09T09:19:14Z" finished-at="2014-07-09T09:19:45Z">
+      <class name="ForgotPassword.AddLocation">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:ForgotPassword.AddLocation@2d209079]" name="OpenBrowser" is-config="true" duration-ms="13097" started-at="2014-07-09T14:49:14Z" finished-at="2014-07-09T14:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="addLocation()[pri:0, instance:ForgotPassword.AddLocation@2d209079]" name="addLocation" duration-ms="17723" started-at="2014-07-09T14:49:27Z" finished-at="2014-07-09T14:49:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLocation -->
+        <test-method status="FAIL" signature="deleteLocation()[pri:0, instance:ForgotPassword.AddLocation@2d209079]" name="deleteLocation" duration-ms="463" started-at="2014-07-09T14:49:44Z" finished-at="2014-07-09T14:49:45Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"span[name='confirmButtonLabel']"}
+Command duration or timeout: 254 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'ULTP_314', ip: '172.25.24.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=30.0, platform=XP, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f69d32f7-4284-43d5-b217-2586e8f13fa7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"span[name='confirmButtonLabel']"}
+Command duration or timeout: 254 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'ULTP_314', ip: '172.25.24.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=30.0, platform=XP, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f69d32f7-4284-43d5-b217-2586e8f13fa7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:326)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:318)
+	at ForgotPassword.AddLocation.deleteLocation(AddLocation.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":"span[name='confirmButtonLabel']"}
+Build info: version: '2.40.0', revision: 'fbe29a9', time: '2014-02-19 20:55:11'
+System info: host: 'ULTP_314', ip: '172.25.24.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8904:7)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8913:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10878:11)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10883:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10825:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLocation -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ForgotPassword.AddLocation@2d209079]" name="close" is-config="true" duration-ms="271" started-at="2014-07-09T14:49:45Z" finished-at="2014-07-09T14:49:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ForgotPassword.AddLocation -->
+    </test> <!-- LRSLocation -->
+    <test name="LRSUser" duration-ms="91689" started-at="2014-07-09T09:19:45Z" finished-at="2014-07-09T09:21:17Z">
+      <class name="ForgotPassword.AddUsers">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="OpenBrowser" is-config="true" duration-ms="15275" started-at="2014-07-09T14:49:45Z" finished-at="2014-07-09T14:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="addUsers()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="addUsers" duration-ms="34670" started-at="2014-07-09T14:50:00Z" finished-at="2014-07-09T14:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUsers -->
+        <test-method status="PASS" signature="changePass()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="changePass" duration-ms="5832" started-at="2014-07-09T14:50:35Z" finished-at="2014-07-09T14:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePass -->
+        <test-method status="PASS" signature="delUser()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="delUser" duration-ms="15439" started-at="2014-07-09T14:50:41Z" finished-at="2014-07-09T14:50:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delUser -->
+        <test-method status="PASS" signature="checkUserAddition()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="checkUserAddition" duration-ms="12039" started-at="2014-07-09T14:50:56Z" depends-on-methods="ForgotPassword.AddUsers.addUsers" finished-at="2014-07-09T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserAddition -->
+        <test-method status="PASS" signature="confirmDelUser()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="confirmDelUser" duration-ms="8406" started-at="2014-07-09T14:51:08Z" depends-on-methods="ForgotPassword.AddUsers.delUser" finished-at="2014-07-09T14:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmDelUser -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ForgotPassword.AddUsers@27f674d]" name="close" is-config="true" duration-ms="11" started-at="2014-07-09T14:51:17Z" finished-at="2014-07-09T14:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ForgotPassword.AddUsers -->
+    </test> <!-- LRSUser -->
+    <test name="LRSLogin" duration-ms="51183" started-at="2014-07-09T09:21:17Z" finished-at="2014-07-09T09:22:08Z">
+      <class name="ForgotPassword.LoginTest">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:ForgotPassword.LoginTest@3b6eb2ec]" name="OpenBrowser" is-config="true" duration-ms="12913" started-at="2014-07-09T14:51:17Z" finished-at="2014-07-09T14:51:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:ForgotPassword.LoginTest@3b6eb2ec]" name="Login" duration-ms="9575" started-at="2014-07-09T14:51:30Z" data-provider="Testdata" finished-at="2014-07-09T14:51:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1@lrs.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:ForgotPassword.LoginTest@3b6eb2ec]" name="Login" duration-ms="9515" started-at="2014-07-09T14:51:39Z" data-provider="Testdata" finished-at="2014-07-09T14:51:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1@lrs.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:ForgotPassword.LoginTest@3b6eb2ec]" name="Login" duration-ms="9457" started-at="2014-07-09T14:51:49Z" data-provider="Testdata" finished-at="2014-07-09T14:51:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@lrs.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:ForgotPassword.LoginTest@3b6eb2ec]" name="Login" duration-ms="9546" started-at="2014-07-09T14:51:58Z" data-provider="Testdata" finished-at="2014-07-09T14:52:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@lrs.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ForgotPassword.LoginTest@3b6eb2ec]" name="close" is-config="true" duration-ms="17" started-at="2014-07-09T14:52:08Z" finished-at="2014-07-09T14:52:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ForgotPassword.LoginTest -->
+    </test> <!-- LRSLogin -->
+    <test name="LRSTableTracker" duration-ms="43812" started-at="2014-07-09T09:22:08Z" finished-at="2014-07-09T09:22:52Z">
+      <class name="ForgotPassword.TableTracker">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:ForgotPassword.TableTracker@7f63425a]" name="OpenBrowser" is-config="true" duration-ms="12569" started-at="2014-07-09T14:52:08Z" finished-at="2014-07-09T14:52:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="searchForCreatedLocation()[pri:0, instance:ForgotPassword.TableTracker@7f63425a]" name="searchForCreatedLocation" duration-ms="31233" started-at="2014-07-09T14:52:21Z" finished-at="2014-07-09T14:52:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForCreatedLocation -->
+        <test-method status="PASS" signature="close()[pri:0, instance:ForgotPassword.TableTracker@7f63425a]" name="close" is-config="true" duration-ms="9" started-at="2014-07-09T14:52:52Z" finished-at="2014-07-09T14:52:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ForgotPassword.TableTracker -->
+    </test> <!-- LRSTableTracker -->
+  </suite> <!-- LRS1.1 -->
+</testng-results>

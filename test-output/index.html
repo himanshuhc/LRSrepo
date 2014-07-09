@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-LRS1.1">
+              <span class="suite-name border-failed">LRS1.1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-LRS1.1">
+                    <span>F:\java projects\LRS1.1\src\ForgotPassword\ExecuteLRSConnect.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-LRS1.1">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-LRS1.1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-LRS1.1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-LRS1.1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-LRS1.1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-LRS1.1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LRS1.1" class="hide-methods failed suite-LRS1.1"> (hide)</a> <!-- hide-methods failed suite-LRS1.1 -->
+                      <a href="#" panel-name="suite-LRS1.1" class="show-methods failed suite-LRS1.1"> (show)</a> <!-- show-methods failed suite-LRS1.1 -->
+                    </span>
+                    <div class="method-list-content failed suite-LRS1.1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddLocation" hash-for-method="deleteLocation">deleteLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LRS1.1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-LRS1.1" class="hide-methods passed suite-LRS1.1"> (hide)</a> <!-- hide-methods passed suite-LRS1.1 -->
+                      <a href="#" panel-name="suite-LRS1.1" class="show-methods passed suite-LRS1.1"> (show)</a> <!-- show-methods passed suite-LRS1.1 -->
+                    </span>
+                    <div class="method-list-content passed suite-LRS1.1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.Functions" hash-for-method="EmailConfirmation">EmailConfirmation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.Functions" hash-for-method="EmailField">EmailField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.Functions" hash-for-method="ForgotPasswordTestCases">ForgotPasswordTestCases</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.Functions" hash-for-method="GoBack">GoBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.LoginTest" hash-for-method="Login(admin@lrs.com, password1)">Login(admin@lrs.com, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.LoginTest" hash-for-method="Login(admin1@lrs.com, password1)">Login(admin1@lrs.com, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.LoginTest" hash-for-method="Login(admin1@lrs.com, password2)">Login(admin1@lrs.com, password2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.LoginTest" hash-for-method="Login(admin@lrs.com, password2)">Login(admin@lrs.com, password2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddLocation" hash-for-method="addLocation">addLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddUsers" hash-for-method="addUsers">addUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddUsers" hash-for-method="changePass">changePass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddUsers" hash-for-method="checkUserAddition">checkUserAddition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddUsers" hash-for-method="confirmDelUser">confirmDelUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.AddUsers" hash-for-method="delUser">delUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.Functions" hash-for-method="resetButton">resetButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LRS1.1" title="ForgotPassword.TableTracker" hash-for-method="searchForCreatedLocation">searchForCreatedLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-LRS1.1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-LRS1.1" class="panel LRS1.1">
+          <div class="suite-LRS1.1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ForgotPassword.AddLocation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteLocation">
+                  </a> <!-- deleteLocation -->
+                  <span class="method-name">deleteLocation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span[name=&apos;confirmButtonLabel&apos;]&quot;}
+Command duration or timeout: 254 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;ULTP_314&apos;, ip: &apos;172.25.24.21&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=30.0, platform=XP, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f69d32f7-4284-43d5-b217-2586e8f13fa7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:326)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:318)
+	at ForgotPassword.AddLocation.deleteLocation(AddLocation.java:66)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span[name=&apos;confirmButtonLabel&apos;]&quot;}
+Build info: version: &apos;2.40.0&apos;, revision: &apos;fbe29a9&apos;, time: &apos;2014-02-19 20:55:11&apos;
+System info: host: &apos;ULTP_314&apos;, ip: &apos;172.25.24.21&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8904:7)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8913:3)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10878:11)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10883:7)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/sunnyk/AppData/Local/Temp/anonymous6788245578770690035webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10825:5)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS1.1-class-failed -->
+          <div class="suite-LRS1.1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ForgotPassword.TableTracker</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForCreatedLocation">
+                  </a> <!-- searchForCreatedLocation -->
+                  <span class="method-name">searchForCreatedLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS1.1-class-passed -->
+          <div class="suite-LRS1.1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ForgotPassword.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(admin@lrs.com, password1)">
+                  </a> <!-- Login(admin@lrs.com, password1) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(admin@lrs.com, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(admin1@lrs.com, password1)">
+                  </a> <!-- Login(admin1@lrs.com, password1) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(admin1@lrs.com, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(admin1@lrs.com, password2)">
+                  </a> <!-- Login(admin1@lrs.com, password2) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(admin1@lrs.com, password2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(admin@lrs.com, password2)">
+                  </a> <!-- Login(admin@lrs.com, password2) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(admin@lrs.com, password2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS1.1-class-passed -->
+          <div class="suite-LRS1.1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ForgotPassword.Functions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EmailConfirmation">
+                  </a> <!-- EmailConfirmation -->
+                  <span class="method-name">EmailConfirmation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EmailField">
+                  </a> <!-- EmailField -->
+                  <span class="method-name">EmailField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotPasswordTestCases">
+                  </a> <!-- ForgotPasswordTestCases -->
+                  <span class="method-name">ForgotPasswordTestCases</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GoBack">
+                  </a> <!-- GoBack -->
+                  <span class="method-name">GoBack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="resetButton">
+                  </a> <!-- resetButton -->
+                  <span class="method-name">resetButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS1.1-class-passed -->
+          <div class="suite-LRS1.1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ForgotPassword.AddUsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUsers">
+                  </a> <!-- addUsers -->
+                  <span class="method-name">addUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePass">
+                  </a> <!-- changePass -->
+                  <span class="method-name">changePass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUserAddition">
+                  </a> <!-- checkUserAddition -->
+                  <span class="method-name">checkUserAddition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmDelUser">
+                  </a> <!-- confirmDelUser -->
+                  <span class="method-name">confirmDelUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delUser">
+                  </a> <!-- delUser -->
+                  <span class="method-name">delUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS1.1-class-passed -->
+          <div class="suite-LRS1.1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ForgotPassword.AddLocation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addLocation">
+                  </a> <!-- addLocation -->
+                  <span class="method-name">addLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LRS1.1-class-passed -->
+        </div> <!-- panel LRS1.1 -->
+        <div panel-name="test-xml-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\java projects\LRS1.1\src\ForgotPassword\ExecuteLRSConnect.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;LRS1.1&quot;&gt;
+  &lt;test name=&quot;LRSFunctions&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ForgotPassword.Functions&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ForgotPasswordTestCases&quot;/&gt;
+          &lt;include name=&quot;GoBack&quot;/&gt;
+          &lt;include name=&quot;resetButton&quot;/&gt;
+          &lt;include name=&quot;EmailField&quot;/&gt;
+          &lt;include name=&quot;EmailConfirmation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ForgotPassword.Functions --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LRSFunctions --&gt;
+  &lt;test name=&quot;LRSLocation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ForgotPassword.AddLocation&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addLocation&quot;/&gt;
+          &lt;include name=&quot;deleteLocation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ForgotPassword.AddLocation --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LRSLocation --&gt;
+  &lt;test name=&quot;LRSUser&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ForgotPassword.AddUsers&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addUsers&quot;/&gt;
+          &lt;include name=&quot;checkUserAddition&quot;/&gt;
+          &lt;include name=&quot;changePass&quot;/&gt;
+          &lt;include name=&quot;delUser&quot;/&gt;
+          &lt;include name=&quot;confirmDelUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ForgotPassword.AddUsers --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LRSUser --&gt;
+  &lt;test name=&quot;LRSLogin&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ForgotPassword.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Login&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ForgotPassword.LoginTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LRSLogin --&gt;
+  &lt;test name=&quot;LRSTableTracker&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ForgotPassword.TableTracker&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchForCreatedLocation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ForgotPassword.TableTracker --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LRSTableTracker --&gt;
+&lt;/suite&gt; &lt;!-- LRS1.1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for LRS1.1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LRSFunctions (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LRSLocation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LRSUser (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LRSLogin (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LRSTableTracker (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for LRS1.1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for LRS1.1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_LRS1.1');
+function tableData_LRS1.1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addUsers')
+data.setCell(0, 2, 'ForgotPassword.AddUsers')
+data.setCell(0, 3, 34670);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchForCreatedLocation')
+data.setCell(1, 2, 'ForgotPassword.TableTracker')
+data.setCell(1, 3, 31233);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addLocation')
+data.setCell(2, 2, 'ForgotPassword.AddLocation')
+data.setCell(2, 3, 17723);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'delUser')
+data.setCell(3, 2, 'ForgotPassword.AddUsers')
+data.setCell(3, 3, 15439);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkUserAddition')
+data.setCell(4, 2, 'ForgotPassword.AddUsers')
+data.setCell(4, 3, 12039);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Login')
+data.setCell(5, 2, 'ForgotPassword.LoginTest')
+data.setCell(5, 3, 9575);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Login')
+data.setCell(6, 2, 'ForgotPassword.LoginTest')
+data.setCell(6, 3, 9546);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Login')
+data.setCell(7, 2, 'ForgotPassword.LoginTest')
+data.setCell(7, 3, 9515);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Login')
+data.setCell(8, 2, 'ForgotPassword.LoginTest')
+data.setCell(8, 3, 9457);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ForgotPasswordTestCases')
+data.setCell(9, 2, 'ForgotPassword.Functions')
+data.setCell(9, 3, 8421);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'confirmDelUser')
+data.setCell(10, 2, 'ForgotPassword.AddUsers')
+data.setCell(10, 3, 8406);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'EmailConfirmation')
+data.setCell(11, 2, 'ForgotPassword.Functions')
+data.setCell(11, 3, 6072);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'changePass')
+data.setCell(12, 2, 'ForgotPassword.AddUsers')
+data.setCell(12, 3, 5832);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'EmailField')
+data.setCell(13, 2, 'ForgotPassword.Functions')
+data.setCell(13, 3, 5224);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'resetButton')
+data.setCell(14, 2, 'ForgotPassword.Functions')
+data.setCell(14, 3, 5148);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteLocation')
+data.setCell(15, 2, 'ForgotPassword.AddLocation')
+data.setCell(15, 3, 463);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'GoBack')
+data.setCell(16, 2, 'ForgotPassword.Functions')
+data.setCell(16, 3, 62);
+window.suiteTableData['LRS1.1']= { tableData: data, tableDiv: 'times-div-LRS1.1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-LRS1.1">
+              </div> <!-- times-div-LRS1.1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for LRS1.1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">24 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ForgotPassword.TableTracker</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">addLocation</span>
+                <br/>
+                <span class="ignored-method-name">deleteLocation</span>
+                <br/>
+                <span class="ignored-method-name">GoBack</span>
+                <br/>
+                <span class="ignored-method-name">ForgotPasswordTestCases</span>
+                <br/>
+                <span class="ignored-method-name">EmailConfirmation</span>
+                <br/>
+                <span class="ignored-method-name">resetButton</span>
+                <br/>
+                <span class="ignored-method-name">EmailField</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ForgotPassword.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">GoBack</span>
+                <br/>
+                <span class="ignored-method-name">ForgotPasswordTestCases</span>
+                <br/>
+                <span class="ignored-method-name">EmailConfirmation</span>
+                <br/>
+                <span class="ignored-method-name">resetButton</span>
+                <br/>
+                <span class="ignored-method-name">EmailField</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ForgotPassword.AddUsers</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">addLocation</span>
+                <br/>
+                <span class="ignored-method-name">deleteLocation</span>
+                <br/>
+                <span class="ignored-method-name">GoBack</span>
+                <br/>
+                <span class="ignored-method-name">ForgotPasswordTestCases</span>
+                <br/>
+                <span class="ignored-method-name">EmailConfirmation</span>
+                <br/>
+                <span class="ignored-method-name">resetButton</span>
+                <br/>
+                <span class="ignored-method-name">EmailField</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ForgotPassword.AddLocation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">GoBack</span>
+                <br/>
+                <span class="ignored-method-name">ForgotPasswordTestCases</span>
+                <br/>
+                <span class="ignored-method-name">EmailConfirmation</span>
+                <br/>
+                <span class="ignored-method-name">resetButton</span>
+                <br/>
+                <span class="ignored-method-name">EmailField</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-LRS1.1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ForgotPassword.Functions</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">OpenBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ForgotPasswordTestCases</span>
+                <span class="method-start">10128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GoBack</span>
+                <span class="method-start">18549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">resetButton</span>
+                <span class="method-start">18627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EmailField</span>
+                <span class="method-start">23775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">EmailConfirmation</span>
+                <span class="method-start">28999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">35074 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ForgotPassword.AddLocation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">OpenBrowser</span>
+                <span class="method-start">35194 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addLocation</span>
+                <span class="method-start">48291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteLocation</span>
+                <span class="method-start">66016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">66479 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ForgotPassword.AddUsers</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">OpenBrowser</span>
+                <span class="method-start">66778 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addUsers</span>
+                <span class="method-start">82053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changePass</span>
+                <span class="method-start">116723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delUser</span>
+                <span class="method-start">122555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUserAddition</span>
+                <span class="method-start">137994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmDelUser</span>
+                <span class="method-start">150049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">158456 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ForgotPassword.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">OpenBrowser</span>
+                <span class="method-start">158482 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Login(admin1@lrs.com, password1)</span>
+                <span class="method-start">171554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(admin1@lrs.com, password2)</span>
+                <span class="method-start">181130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(admin@lrs.com, password2)</span>
+                <span class="method-start">190645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(admin@lrs.com, password1)</span>
+                <span class="method-start">200102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">209648 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ForgotPassword.TableTracker</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">OpenBrowser</span>
+                <span class="method-start">209680 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchForCreatedLocation</span>
+                <span class="method-start">222250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">253483 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

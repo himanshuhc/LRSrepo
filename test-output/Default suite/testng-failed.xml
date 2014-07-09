@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="ForgotPassword.LoginTest">
+        <methods>
+          <include name="changePass"/>
+          <include name="deleteLocation"/>
+          <include name="GoBack"/>
+          <include name="confirmDelUser"/>
+          <include name="addUsers"/>
+          <include name="delUser"/>
+          <include name="OpenBrowser"/>
+          <include name="Login" invocation-numbers="0 1 2 3"/>
+          <include name="checkUserAddition"/>
+          <include name="ForgotPasswordTestCases"/>
+          <include name="resetButton"/>
+          <include name="EmailConfirmation"/>
+          <include name="close"/>
+          <include name="EmailField"/>
+        </methods>
+      </class> <!-- ForgotPassword.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
